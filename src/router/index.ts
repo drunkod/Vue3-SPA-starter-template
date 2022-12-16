@@ -25,14 +25,14 @@ const router = createRouter({
         gates: ["auth"],
       },
     },
-    {
-      path: "/add-payment-method",
-      name: "add-payment-method",
-      component: () => import("../views/AddPaymentMethodView.vue"),
-      meta: {
-        gates: ["auth"],
-      },
-    },
+    // {
+    //   path: "/add-payment-method",
+    //   name: "add-payment-method",
+    //   component: () => import("../views/AddPaymentMethodView.vue"),
+    //   meta: {
+    //     gates: ["auth"],
+    //   },
+    // },
     {
       path: "/about",
       name: "about",
