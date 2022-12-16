@@ -2,8 +2,8 @@
 import { useUserStore } from "@/stores/user";
 import { nextTick, onBeforeMount, reactive, ref } from "vue";
 import BaseForm from "./BaseForm.vue";
-import { loadStripe } from "@stripe/stripe-js";
-import { StripeElement, StripeElements } from "vue-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
+// import { StripeElement, StripeElements } from "vue-stripe-js";
 import { getCssVarForStripe } from "@/helpers/cssVariables";
 
 const success = ref(false);
@@ -45,10 +45,10 @@ const stripeKey = import.meta.env.VITE_STRIPE_KEY;
 
 onBeforeMount(() => {
   getClientSecret();
-  const stripePromise = loadStripe(stripeKey);
-  stripePromise.then(() => {
-    stripeLoaded.value = true;
-  });
+  // const stripePromise = loadStripe(stripeKey);
+  // stripePromise.then(() => {
+  //   stripeLoaded.value = true;
+  // });
 });
 
 const getClientSecret = async () => {
@@ -173,7 +173,7 @@ const focusOnInput = () => {
     data-cy="add-payment-form"
   >
     <label @click="focusOnInput()">{{ $t("Add a payment method") }}</label>
-    <StripeElements
+    <!-- <StripeElements
       @click="focusOnInput()"
       class="input"
       style="min-width: 280px"
@@ -200,7 +200,7 @@ const focusOnInput = () => {
           style: elementStyle,
         }"
       />
-    </StripeElements>
+    </StripeElements> -->
   </BaseForm>
   <div v-else>{{ $t("Login or sign up to continue") }}</div>
 </template>
