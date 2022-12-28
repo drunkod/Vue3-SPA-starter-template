@@ -1,0 +1,1 @@
+import"./ConfirmPassword.vue_vue_type_script_setup_true_lang.762bc0c9.js";import{_ as f}from"./ConfirmPassword.vue_vue_type_script_setup_true_lang.762bc0c9.js";import"./index.855284fc.js";import"./BaseForm.vue_vue_type_script_setup_true_lang.cfd44047.js";import"./BaseButton.vue_vue_type_script_setup_true_lang.8c6a2ef1.js";export{f as default};

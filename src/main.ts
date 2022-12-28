@@ -18,6 +18,8 @@ import gates from "./router/gates";
 import { metaTagPlugin } from "@m-media/vue3-meta-tags";
 import { EventsPlugin } from "./eventBus/events";
 
+import "@gun-vue/components/dist/style.css";
+
 const app = createApp(App);
 
 axios.defaults.withCredentials = true;
@@ -43,8 +45,10 @@ app.use(
     defaultName: import.meta.env.VITE_APP_NAME,
     defaultLocale: i18n.global.locale.value,
     locales: SUPPORT_LOCALES,
+    preload: ["https://telegram.org/js/telegram-web-app.js"],
     preconnect: [
       import.meta.env.VITE_API_URL,
+      "https://telegram.org/js",
       "https://js.stripe.com",
       "https://hooks.stripe.com",
       "https://api.stripe.com",

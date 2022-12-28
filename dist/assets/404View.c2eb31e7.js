@@ -1,0 +1,1 @@
+import{_ as t}from"./BaseButton.vue_vue_type_script_setup_true_lang.8c6a2ef1.js";import{d as a,a as o,c as s,f as n,w as r,k as c,t as _,e as i}from"./index.855284fc.js";const l=i("h1",null,"404",-1),u=a({__name:"404View",setup(m){return(e,d)=>(o(),s("div",null,[l,n(t,{to:"/"},{default:r(()=>[c(_(e.$t("Home")),1)]),_:1})]))}});export{u as default};

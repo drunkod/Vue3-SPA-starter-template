@@ -1,0 +1,1 @@
+import"./LoginOrRegister.vue_vue_type_script_setup_true_lang.4efb078a.js";import{_ as f}from"./LoginOrRegister.vue_vue_type_script_setup_true_lang.4efb078a.js";import"./index.855284fc.js";import"./BaseButton.vue_vue_type_script_setup_true_lang.8c6a2ef1.js";import"./BaseForm.vue_vue_type_script_setup_true_lang.cfd44047.js";export{f as default};

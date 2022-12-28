@@ -1,0 +1,1 @@
+import"./BaseForm.vue_vue_type_script_setup_true_lang.cfd44047.js";import{_ as i}from"./BaseForm.vue_vue_type_script_setup_true_lang.cfd44047.js";import"./index.855284fc.js";import"./BaseButton.vue_vue_type_script_setup_true_lang.8c6a2ef1.js";export{i as default};

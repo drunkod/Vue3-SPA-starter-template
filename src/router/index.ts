@@ -2,12 +2,23 @@ import { createRouter, createWebHistory } from "vue-router";
 import $bus, { eventTypes } from "@/eventBus/events";
 import authRoutes from "./authRoutes";
 import { ref } from "vue";
-
+import { AccountHome, RoomList } from "@gun-vue/components";
 export const navIsLoading = ref(true);
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: "/rooms",
+      name: "rooms",
+      component: RoomList,
+    },
+    {
+      path: "/users/:pub",
+      name: "user",
+      component: AccountHome,
+      props: true,
+    },
     {
       path: "/",
       name: "home",
